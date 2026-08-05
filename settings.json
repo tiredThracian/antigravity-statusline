@@ -1,0 +1,187 @@
+{
+  "allowNonWorkspaceAccess": true,
+  "colorScheme": "light",
+  "enableTelemetry": false,
+  "mcpServers": {
+    "gpd-conventions": {
+      "command": "C:\\Users\\ibrah\\.gpd\\venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "gpd.mcp.servers.conventions_server"
+      ],
+      "env": {
+        "LOG_LEVEL": "WARNING"
+      },
+      "trust": true
+    },
+    "gpd-errors": {
+      "command": "C:\\Users\\ibrah\\.gpd\\venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "gpd.mcp.servers.errors_mcp"
+      ],
+      "env": {
+        "LOG_LEVEL": "WARNING"
+      },
+      "trust": true
+    },
+    "gpd-patterns": {
+      "command": "C:\\Users\\ibrah\\.gpd\\venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "gpd.mcp.servers.patterns_server"
+      ],
+      "env": {
+        "LOG_LEVEL": "WARNING"
+      },
+      "trust": true
+    },
+    "gpd-protocols": {
+      "command": "C:\\Users\\ibrah\\.gpd\\venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "gpd.mcp.servers.protocols_server"
+      ],
+      "env": {
+        "LOG_LEVEL": "WARNING"
+      },
+      "trust": true
+    },
+    "gpd-skills": {
+      "command": "C:\\Users\\ibrah\\.gpd\\venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "gpd.mcp.servers.skills_server"
+      ],
+      "env": {
+        "LOG_LEVEL": "WARNING"
+      },
+      "trust": true
+    },
+    "gpd-state": {
+      "command": "C:\\Users\\ibrah\\.gpd\\venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "gpd.mcp.servers.state_server"
+      ],
+      "env": {
+        "LOG_LEVEL": "WARNING"
+      },
+      "trust": true
+    },
+    "gpd-verification": {
+      "command": "C:\\Users\\ibrah\\.gpd\\venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "gpd.mcp.servers.verification_server"
+      ],
+      "env": {
+        "LOG_LEVEL": "WARNING"
+      },
+      "trust": true
+    }
+  },
+  "model": "Gemini 3.6 Flash (Low)",
+  "notifications": true,
+  "permissions": {
+    "allow": [
+      "command(Get-Location)",
+      "command(cmake -B \"C:\\Users\\ibrah\\memcpy_benchmark\\build\" -S \"C:\\Users\\ibrah\\memcpy_benchmark\")",
+      "command(cmake --build \"C:\\Users\\ibrah\\memcpy_benchmark\\build\" --config Release)",
+      "command(Get-ChildItem)",
+      "command(Select-String)",
+      "command(svn status)",
+      "command(svn info)"
+    ]
+  },
+  "runningLightSpeed": "slow",
+  "showFeedbackSurvey": false,
+  "statusLine": {
+    "type": "command",
+    "command": "cmd.exe /c C:\\Users\\ibrah\\.gemini\\antigravity-cli\\statusline.bat",
+    "enabled": true
+  },
+  "toolPermission": "always-proceed",
+  "trustedWorkspaces": [
+    "C:\\Users\\ibrah",
+    "D:\\Work\\Projekts\\oculus-z\\MilkedDevBranchForv1118",
+    "C:\\Users\\ibrah\\orca\\workspaces\\HobbySide\\orca-worktree-1",
+    "D:\\",
+    "D:\\Work",
+    "C:\\Users\\ibrah\\Documents\\Personal\\Alp\\Ucode Yarisma",
+    "D:\\Work\\Projekts\\IHA",
+    "C:\\Users\\ibrah\\Documents\\Personal\\Alp\\Jukit",
+    "D:\\Work\\Server",
+    "D:\\Work\\migration\\oculus-z-git",
+    "D:\\Work\\Projekts\\OculusMilkedIntegration",
+    "D:\\Work\\migration",
+    "C:\\Users\\ibrah\\Documents\\Personal\\Alp\\Teknofest",
+    "D:\\Work\\Projekts\\IHA Tespit Teydeb",
+    "D:\\Work\\Projekts\\HobbySide",
+    "C:\\Users\\ibrah\\orca\\workspaces\\IHA Tespit Teydeb\\issue-1-prepare-presentation",
+    "C:\\Users\\ibrah\\orca\\workspaces\\OculusMilkedIntegration\\Fix_Empty_Commit_Messages",
+    "C:\\Users\\ibrah\\orca\\workspaces\\aselsan-know-how-transferi\\mahimahi",
+    "D:\\Work\\Projekts\\aselsan-know-how-transferi",
+    "C:\\Users\\ibrah\\Documents\\Personal\\saglik\\Tahliller",
+    "D:\\Work\\Projekts\\oculus-z\\EsenbranchRestv1300",
+    "D:\\Work\\Projekts\\Sentinel",
+    "C:\\Users\\ibrah\\Nextcloud\\Zeta\\Kurumsal\\Teklifler",
+    "C:\\Users\\ibrah\\orca\\projects\\MindSpark",
+    "C:\\Users\\ibrah\\orca\\workspaces\\nato_diana_dronedetect\\diana-challenge-analizi",
+    "C:\\Users\\ibrah\\orca\\workspaces\\aselsan-know-how-transferi\\iris-ytt-dok-man",
+    "C:\\Users\\ibrah\\orca\\workspaces\\OculusMilkedIntegration\\memcopy-problems",
+    "D:\\Work\\Projekts\\Grants\\Diana\\DroneDetect\\nato_diana_dronedetect",
+    "D:\\Work\\Projekts\\CWD_PlanZ\\CWD_PlanZ",
+    "C:\\Users\\ibrah\\orca\\workspaces\\nato_diana_dronedetect\\Upload",
+    "C:\\Users\\ibrah\\orca\\workspaces\\IHA Tespit Teydeb\\hakem-formu",
+    "C:\\Users\\ibrah\\orca\\KahveTelveFizibilite",
+    "C:\\Users\\ibrah\\orca\\vins",
+    "C:\\Users\\ibrah\\orca\\corporateit",
+    "C:\\Users\\ibrah\\orca\\workspaces\\corporateit\\uzmanpostadaki-b-t-n-ayarlar-n-kontrol-edilmesi",
+    "C:\\Users\\ibrah\\orca\\workspaces\\corporateit\\gmail-y-netimi",
+    "C:\\Users\\ibrah\\orca\\workspaces\\Sentinel\\Refactoring-1",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\flow-a-agy",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\flow-b-codex",
+    "C:\\Users\\ibrah\\orca\\projects\\Meds Blood Level",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\test-antigravity",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\flow-c-agy",
+    "C:\\Users\\ibrah\\orca\\workspaces\\aselsan-know-how-transferi\\iris-i-in-dok-man-haz-rlama",
+    "D:\\Work\\Projekts\\OculusMilkedInt\\oculus-z-milked",
+    "C:\\Users\\ibrah\\orca\\workspaces\\aselsan-know-how-transferi\\ygo-generate-review",
+    "C:\\Users\\ibrah\\orca\\workspaces\\Sentinel\\Refactoring-2",
+    "C:\\Users\\ibrah\\orca\\grant-search",
+    "C:\\Users\\ibrah\\orca\\gemini-spark-skill",
+    "C:\\Users\\ibrah\\orca\\workspaces\\aselsan-know-how-transferi\\YGO-YTT-peer-review",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\phase-four",
+    "C:\\Users\\ibrah\\orca\\workspaces\\aselsan-know-how-transferi\\Work-on-YUO",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\phase-6-b2c",
+    "C:\\Users\\ibrah\\orca\\workspaces\\aselsan-know-how-transferi\\Work-On-Iris-YTET",
+    "C:\\Users\\ibrah\\orca\\workspaces\\Sentinel\\code-analysis-and-cleanup",
+    "D:\\Work\\AutoFin",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\council-maintainability",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\council-performance",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\council-security",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\council-visuals",
+    "C:\\Users\\ibrah\\orca\\projects\\MindSpark-phase-6",
+    "C:\\Users\\ibrah\\orca\\projects\\HF-signals-research",
+    "C:\\Users\\ibrah\\orca\\workspaces\\HF-signals-research\\VHF",
+    "C:\\Users\\ibrah\\orca\\workspaces\\aselsan-know-how-transferi\\Android-Lens",
+    "C:\\Users\\ibrah\\orca\\workspaces\\HF-signals-research\\Sorcerer-Reverse-Engineering",
+    "C:\\Users\\ibrah\\orca\\workspaces\\HF-signals-research\\Reverse-engineer-SCS-pactor-RX",
+    "C:\\Users\\ibrah\\orca\\workspaces\\Sentinel\\EsenRFIHoppingDetection",
+    "C:\\Users\\ibrah\\orca\\projects\\Research",
+    "C:\\Users\\ibrah\\orca\\projects\\Esen-RFI-Hopping",
+    "C:\\Users\\ibrah\\orca\\projects\\MindSpark-visual-overhaul",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\game-catalog-placeholders",
+    "C:\\Users\\ibrah\\orca\\workspaces\\MindSpark\\globi-visual-divergence",
+    "C:\\Users\\ibrah\\orca\\workspaces\\CWD_PlanZ\\Research",
+    "C:\\Users\\ibrah\\orca\\projects\\CWD_ZA",
+    "C:\\Users\\ibrah\\orca\\workspaces\\oculus-z-milked\\80mhz-headerl-yap-i-in-geli-tirmleler-eklendi-he",
+    "C:\\Users\\ibrah\\orca\\projects\\CWD_ZA_edge_detector",
+    "C:\\Users\\ibrah\\orca\\projects\\CWD_ZB",
+    "C:\\Users\\ibrah\\orca\\workspaces\\CWD_ZB\\FP_Mitigation",
+    "C:\\Users\\ibrah\\orca\\workspaces\\CWD_ZB\\TinyNN_LowPower",
+    "C:\\Users\\ibrah\\orca\\workspaces\\CWD_ZB\\PiZero2W_SingleCore",
+    "C:\\Users\\ibrah\\orca\\workspaces\\HF-signals-research\\Channelizer"
+  ]
+}
