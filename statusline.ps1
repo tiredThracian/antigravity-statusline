@@ -4,31 +4,35 @@ param(
     [string]$inputJson
 )
 
-# Ensure standard output encoding is UTF-8 so Unicode characters display correctly
-[System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$ErrorActionPreference = 'Stop'
 
-if ([string]::IsNullOrWhiteSpace($inputJson)) {
-    # Input JSON from stdin
-    $inputJson = [System.Console]::In.ReadToEnd()
-}
-if ([string]::IsNullOrWhiteSpace($inputJson)) {
-    $inputJson = '{}'
-}
-
-# Parse JSON Safely
 try {
-    $data = ConvertFrom-Json $inputJson -ErrorAction SilentlyContinue
-    if ($data) {
-        $hp = $env:USERPROFILE
-        if ([string]::IsNullOrEmpty($hp)) { $hp = $env:HOME }
-        $dumpPath = Join-Path $hp ".gemini\antigravity-cli\last_payload.json"
-        $inputJson | Out-File -FilePath $dumpPath -Encoding utf8 -Force
+    # Ensure standard output encoding is UTF-8 so Unicode characters display correctly
+    [System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
+    if ([string]::IsNullOrWhiteSpace($inputJson)) {
+        # Input JSON from stdin
+        try {
+            $inputJson = [System.Console]::In.ReadToEnd()
+        } catch {}
     }
-} catch {
-    $data = @{}
-}
+    if ([string]::IsNullOrWhiteSpace($inputJson)) {
+        $inputJson = '{}'
+    }
 
-try {
+    # Parse JSON Safely
+    try {
+        $data = ConvertFrom-Json $inputJson -ErrorAction SilentlyContinue
+        if ($data) {
+            $hp = $env:USERPROFILE
+            if ([string]::IsNullOrEmpty($hp)) { $hp = $env:HOME }
+            $dumpPath = Join-Path $hp ".gemini\antigravity-cli\last_payload.json"
+            $inputJson | Out-File -FilePath $dumpPath -Encoding utf8 -Force -ErrorAction SilentlyContinue
+        }
+    } catch {
+        $data = @{}
+    }
+
     # --- ANSI Helpers (Standard 16-color palette) -------------------------------
     $R = "$([char]0x1b)[0m"         # Reset
     $B = "$([char]0x1b)[1m"         # Bold
