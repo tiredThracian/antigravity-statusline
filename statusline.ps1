@@ -193,9 +193,9 @@ try {
     $COLS = if ($data.terminal_width) { [int]$data.terminal_width } else { 80 }
     $CWD = if ($data.cwd) { $data.cwd } else { "" }
     $CONV_ID = if ($data.conversation_id) { $data.conversation_id } else { "" }
-    $INPUT_TOKENS = if ($data.context_window -and $data.context_window.total_input_tokens) { [int]$data.context_window.total_input_tokens } else { 0 }
-    $OUTPUT_TOKENS = if ($data.context_window -and $data.context_window.total_output_tokens) { [int]$data.context_window.total_output_tokens } else { 0 }
-    $TXT_LIMIT = if ($data.context_window -and $data.context_window.context_window_size) { [int]$data.context_window.context_window_size } else { 0 }
+    $INPUT_TOKENS = if ($data.context_window -and $data.context_window.total_input_tokens) { [int64]$data.context_window.total_input_tokens } else { 0 }
+    $OUTPUT_TOKENS = if ($data.context_window -and $data.context_window.total_output_tokens) { [int64]$data.context_window.total_output_tokens } else { 0 }
+    $TXT_LIMIT = if ($data.context_window -and $data.context_window.context_window_size) { [int64]$data.context_window.context_window_size } else { 0 }
 
     $CTX_USED = $INPUT_TOKENS + $OUTPUT_TOKENS
 
