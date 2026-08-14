@@ -81,7 +81,7 @@
       "trust": true
     }
   },
-  "model": "Gemini 3.6 Flash (Low)",
+  "model": "Gemini 3.7 Flash (Low)",
   "notifications": true,
   "permissions": {
     "allow": [
@@ -98,7 +98,7 @@
   "showFeedbackSurvey": false,
   "statusLine": {
     "type": "command",
-    "command": "cmd.exe /c C:\\Users\\ibrah\\.gemini\\antigravity-cli\\statusline.bat",
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& { try { C:\\Users\\ibrah\\.gemini\\antigravity-cli\\statusline.ps1 } catch { Write-Host '🟢 READY | 💡 Gemini' }; exit 0 }\"",
     "enabled": true
   },
   "toolPermission": "always-proceed",
@@ -182,6 +182,11 @@
     "C:\\Users\\ibrah\\orca\\workspaces\\CWD_ZB\\FP_Mitigation",
     "C:\\Users\\ibrah\\orca\\workspaces\\CWD_ZB\\TinyNN_LowPower",
     "C:\\Users\\ibrah\\orca\\workspaces\\CWD_ZB\\PiZero2W_SingleCore",
-    "C:\\Users\\ibrah\\orca\\workspaces\\HF-signals-research\\Channelizer"
+    "C:\\Users\\ibrah\\orca\\workspaces\\HF-signals-research\\Channelizer",
+    "C:\\Users\\ibrah\\orca\\projects\\Business Ideas",
+    "C:\\Users\\ibrah\\orca\\projects\\AgriPulse",
+    "G:\\Ortak Drive'lar\\Zeta - Kurumsal\\Teklifler",
+    "G:\\Ortak Drive'lar\\Zeta - Kurumsal\\Teklifler\\Esen\\Signal Analysis 20260811",
+    "C:\\Users\\ibrah\\orca\\workspaces\\Sentinel\\channelizer-design"
   ]
 }

@@ -4,7 +4,7 @@ param(
     [string]$inputJson
 )
 
-$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'SilentlyContinue'
 
 try {
     # Ensure standard output encoding is UTF-8 so Unicode characters display correctly
