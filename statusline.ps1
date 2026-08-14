@@ -197,7 +197,14 @@ try {
     $OUTPUT_TOKENS = if ($data.context_window -and $data.context_window.total_output_tokens) { [int64]$data.context_window.total_output_tokens } else { 0 }
     $TXT_LIMIT = if ($data.context_window -and $data.context_window.context_window_size) { [int64]$data.context_window.context_window_size } else { 0 }
 
-    $CTX_USED = $INPUT_TOKENS + $OUTPUT_TOKENS
+    # Calculate actual tokens residing in active context window
+    $CTX_USED = 0
+    if ($TXT_LIMIT -gt 0 -and $USED_PCT -gt 0) {
+        $CTX_USED = [int64][math]::Round(($USED_PCT / 100.0) * $TXT_LIMIT)
+    } elseif ($data.context_window -and $data.context_window.current_usage) {
+        $u = $data.context_window.current_usage
+        $CTX_USED = [int64]($u.input_tokens + $u.output_tokens + $u.cache_read_input_tokens + $u.cache_creation_input_tokens)
+    }
 
     $SUBAGENTS = 0
     if ($data.subagents) {
