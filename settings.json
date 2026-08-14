@@ -98,7 +98,7 @@
   "showFeedbackSurvey": false,
   "statusLine": {
     "type": "command",
-    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"& { try { C:\\Users\\ibrah\\.gemini\\antigravity-cli\\statusline.ps1 } catch { Write-Host '🟢 READY | 💡 Gemini' }; exit 0 }\"",
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\ibrah\\.gemini\\antigravity-cli\\statusline.ps1",
     "enabled": true
   },
   "toolPermission": "always-proceed",
