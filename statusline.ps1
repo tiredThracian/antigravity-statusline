@@ -6,6 +6,12 @@ param(
 
 $ErrorActionPreference = 'SilentlyContinue'
 
+# Global safety trap to ensure 0 exit code on any unhandled runtime engine error
+trap {
+    Write-Host "🟢 READY | 💡 Gemini"
+    exit 0
+}
+
 try {
     # Ensure standard output encoding is UTF-8 so Unicode characters display correctly
     [System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8
